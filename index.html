@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+	<title> Website</title>
+	<link rel= "stylesheet" href = "style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+    
+<body>
+    
+<section class="header">
+    
+<!-- Menu and logo -->  
+    
+    <nav>
+			<a href ="index.html" class="logo">
+                <i class="fas fa-globe"></i> Bhagya Sri </a>
+        <div class = "nav-links" id = "navLinks">
+				<i class="fa fa-times" onclick ="hideMenu()" ></i>
+            <ul>
+				<li><a href="">Home</a></li>   
+				<li><a href="">About</a></li>
+				<li><a href="">Skills</a></li> 
+			    <li><a href="">Experience</a></li>   
+				<li><a href="">Projects</a></li> 
+                <li><a href="">Contact</a></li>   
+            </ul>
+        </div>
+			<i class="fa fa-bars" onclick ="showMenu()"></i>
+    </nav> 
+    
+<!-- Name and qualifications--> 
+    <div class="text-box">
+        
+	    <h1 class="animated-name">
+           <span>B</span><span>h</span><span>a</span><span>g</span><span>y</span><span>a</span> 
+           <span>S</span><span>r</span><span>i</span> 
+            <span>C</span><span>h</span><span>i</span><span>n</span><span>t</span><span>a</span><span>k</span><span>u</span><span>l</span><span>a</span>
+        </h1>
+        
+	   <h2> Urban Data Analyst | GIS Analyst | Urban and Rural Planner </h2>
+	
+<!-- Icons--> 
+     
+    <div class="social-icons">
+        
+        <a href="https://github.com/BHagya0402" class="social-icon" aria-label="GitHub Profile">
+            <i class="fab fa-github"></i>
+        </a>
+        
+        <a href="https://linkedin.com/in/bhagya-sri-chintakula" class="social-icon" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        
+        <a href="mailto:gy97bsc@gmail.com" class="social-icon" aria-label="Email Contact">
+            <i class="fas fa-envelope"></i>
+        </a>
+        
+        <a href="#portfolio" class="social-icon" aria-label="Portfolio">
+            <i class="fas fa-briefcase"></i>
+        </a>
+        
+    </div>
+    
+<!-- Contact and Projects--> 
+     
+    <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a href="#projects" class="btn btn-outline">View Projects</a>
+    </div>
+        
+    </div>
+    
+</section> 
+    
+ <!-- Right Image Animation-->    
+
+<div class="image-slider">
+    <div class="slide fade">
+        <img src="Greenery_analysis.png" >
+        <h3>GIS Mapping</h3>
+    </div>
+    
+    <div class="slide fade">
+        <img src="Access.png" >
+        <h3>Urban Analysis</h3>
+    </div>
+    
+    <div class="slide fade">
+        <img src="UH.png" >
+        <h3>Remote Sensing</h3>
+    </div>
+    
+    
+    <div class="slide fade">
+        <img src="Greenery_analysis.png" >
+        <h3>Urban design & Planning</h3>
+    </div>
+    <div class="slide fade">
+        <img src="UH.png" >
+        <h3>Environmental Analysis</h3>
+    </div>
+    
+    
+
+    <!-- Navigation Dots -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+</div>
+    
+    
+     
+    
+<!-- About me --> 
+
+<section class="about-me">
+    <div class="about-container">
+        <!-- Left Side: About Me Text -->
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p style="text-align: justify;">
+                Experienced GIS Consultant and Urban Planner with a strong background in geoinformatics, spatial 
+                analysis, and infrastructure planning. Skilled in creating interactive web maps, mobile 
+                applications, StoryMaps, and dashboards to support strategic decision-making. I am committed to leveraging 
+                data to address real-world challenges and derive sustainable development strategies.
+            </p>
+             <div class="hero-buttons" style="margin-left: 70px; margin-top: 5px;">
+        <a href="About_me.html" class="btn btn-primary">Know more about me</a>
+
+    </div>
+        </div>
+
+        <!-- Right Side: Links to CV, Portfolio, and Medium -->
+        <div class="about-links">
+           <a href="BhagyaSri_CV.pdf" target="_blank" class="about-link">&#128196; Resume</a>
+<a href="#portfolio" class="about-link">&#128194; View Portfolio</a>
+<a href="https://medium.com/@gy97bsc" target="_blank" class="about-link">&#9997; Read My Medium Blogs</a>
+</div>
+    </div>
+</section>
+    
+    
+
+<!-- Skills --> 
+    
+<section class="Skills">
+    <h1>Skills</h1> 
+  <div class="row">
+        <div class="Skills-col">
+            <h3>GIS, Web Mapping & data collection</h3>
+            <p style="text-align: justify;">
+            * ArcGIS <br>
+            * QGIS <br>
+            * ERDAS IMAGINE <br>  
+            * AutoCAD Map 3D <br>
+            * Google Earth Pro <br> 
+            * Field Maps <br>
+            * QField <br>
+            * Survey123 <br>
+            * StoryMaps
+        </p>
+        </div>
+        
+        <div class="Skills-col">
+            <h3>Programming Languages & Data Analysis</h3>
+            <p style="text-align: justify;">
+               * Python <br>
+               * R <br>
+               * SQL <br>
+               * HTML & CSS <br> 
+               * JavaScript <br>
+               * Power BI <br>
+               * Microsoft Excel <br>
+        </p>
+        </div>
+        
+        <div class="Skills-col">
+            <h3>Documentation, Design & Visualization </h3>
+            <p style="text-align: justify;">
+            * Microsoft Office <br>
+            (Word, PowerPoint) <br>
+            * SketchUp <br>
+            * Revit <br>
+            * AutoCAD <br>
+            * Photoshop <br>  
+            * LaTeX 
+        </p>
+        </div>
+    <div class="Skills-col">
+            <h3> Soft Skills</h3>
+            <p style="text-align: justify;">
+            * GIS Training & Support <br>
+            * Project Management <br>
+            * Presentation  <br>
+            * Time Management <br>
+            * multi-tasking <br>
+            * Communication <br> English, Hindi, Urdu, Telugu 
+        </p>
+        </div>    
+      
+    </div>  
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    </section>
+    
+    
+   
+<!-- Projects -->  
+    
+    
+    
+<section class="Projects">
+    <h1>My Projects</h1>
+    <!-- First Row -->
+    <div class="row">
+        <div class="Projects-col">
+            <h3>Bristol Accessibility Dashboard</h3>
+            <img src="Bris_.png">
+            <p><strong>Leveraging Urban Data for Connected Cities </strong></p>
+            <p style="text-align: justify;">
+            As cities grow, data-driven decision-making is essential for better land use, last-mile connectivity, and meeting community needs.
+            In this project, I utilized Bristol Open Data to develop an interactive <strong>geospatial dashboard for Bristol city</strong>
+                aimed at supporting policymakers, urban planners, and residents in making informed decisions.
+            The dashboard provides postcode-level insights into building access to essential amenities—green spaces, schools, healthcare facilities, and bus stops—enabling users to assess how well different parts of the city are connected and identify areas that require infrastructure improvements. 
+        </p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="Projects-col">
+            <h3>Urban Greenery Analysis</h3>
+            <img src="trees.png" style="border: 1px solid black;">
+            <p><strong>Urban tree coverage - Kingston upon Thames </strong></p>
+            <p style="text-align: justify;">
+            Urban greenery plays a vital role in improving the quality of life in cities by enhancing air quality, reducing urban heat, and promoting physical and mental well-being.  
+            This project focuses on assessing <strong>ward-wise urban tree coverage in London</strong>, with a detailed case study on Kingston upon Thames. 
+            Using the Overpass API, I extracted 27,521 building geometries from OpenStreetMap and assessed access to green spaces, 
+            by calculating the proximity of each building to trees in good condition. The analysis revealed that 13,906 households do not have a healthy tree 
+            within 100 meters.
+            </p>
+
+            <div class="column-container">
+        <a href="https://github.com/BHagya0402/Urban-Greenery-Analysis/blob/main/README.md" class="link-btn" target="_blank">View Project</a>
+    </div>
+        </div>
+        
+        
+        <div class="Projects-col">
+            <h3>Land use Land Cover Analysis</h3>
+            <img src="2.png" style="border: 1px solid black;">
+            <p><strong>Spatiotemporal Analysis of Urban Growth </strong></p>
+            <p style="text-align: justify;">
+            Urban growth is a global phenomenon that significantly impacts the environmental and socio-economic dimensions of cities. To accommodate population demands, natural landscapes are drastically transformed into built environments.
+Historical Land use analysis is an efficient method to understand the urban growth phases and how cities evolved. This project focuses on the <strong>urban growth of Staten Island from 1984 to 2024</strong>, analysing Landsat 8 data for land use changes.
+Using a deep learning model, identified a 24% loss in green spaces over the past 40 years and estimated by 2050 the study area will have only 3% greenspaces.
+</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="row">
+        <div class="Projects-col">
+            <h3>Tree mapping using deep learning model</h3>
+            <video width="100%" autoplay muted loop playsinline> 
+            <source src="Screen%20Recording%202025-02-22%20181126.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+             <p><strong>SAMGeo and Segment Anything Model 2 (SAM 2) for automatic trees mapping</strong></p>
+             <p style="text-align: justify;">
+                Trees are crucial in reducing land surface temperature, managing floods, 
+                beautifying landscapes, and enhancing ecosystem resilience, but we often treat them merely as locations. 
+                "Trees deserve more than being a point on our map” and they must be incorporated into environmental planning to maximize their benefits.  
+                Using the Segment Anything Model and QGIS, <strong>I mapped 18797 🌳 trees in Sheffield </strong>.  The tree dataset is crucial for monitoring tree health, 
+                estimating tree cover, deriving trees per capita and indices, 
+                and contributing to urban greening projects, forestry management, and environmental conservation.  </p>
+          <div class="column-container">
+            <a href="#" class="link-btn">Learn More</a>
+          </div>
+        </div>
+        
+        <div class="Projects-col">
+            <h3>Crime Analysis</h3>
+            <img src="crime_analysis.png" style="border: 1px solid black;">
+            <p><strong>Spatial Analysis of Crime patterns to identify and predict future crime hotspots</strong></p>
+            <p style="text-align: justify;">
+            One of the significant challenges pressuring urban environments is the rising crime rate, and increasing crimes highly impact 
+                the socio-economic systems of the cities. The City of London has an overall crime rate of 819 crimes per 1000 people in the year 2022, which is 762% higher
+                compared to the overall London crime rate. This project focuses on crime patterns by identifying high-crime locations, analysis revealed <strong>101 crime hotspots</strong> with over 50 reported crimes in proximity and 
+                <strong>23 hotspots with more than 150 crimes.</strong> Building on this, incorporating 2021-2024 crime data <strong>predicted 324 potential future crime hotspots.</strong>
+
+            </p>
+            <div class="column-container">
+                <a href="https://bhagya0402.github.io/Crime_Analysis_City-of-London/" class="link-btn" target="_blank">Crime Hotspots Web map</a>
+            </div>
+        </div>
+        
+        
+        <div class="Projects-col">
+            <h3>Environmental Impact Assessment</h3>
+            <img src="11.png" style="border: 1px solid black;">
+            <p><strong>Environmental Management and Disaster Resilience Plan, North Lakhimpur </strong></p>
+            <p style="text-align: justify;">
+                This study involves an environmental and social vulnerability analysis of North Lakhimpur, covering an area of 14 sq. km. By integrating demographic data with NDVI, land use/land cover (LULC), groundwater and surface water levels, rainfall patterns, historical flood records, water quality, and transport network data, we developed key indices at the ward level to identify critical environmental and infrastructure challenges.
+                Using image processing and spatial analysis techniques, the study assessed land cover changes from 2000 to 2018, 
+                and derived indices such as the Flood Vulnerability Index (FVI), Agricultural Vulnerability Index (AVI), 
+                and Social Vulnerability Index (SVI). My role in the project involved contributing to innovative strategies for natural 
+                flood management along the Subansiri River.</p>
+            
+        </div>
+    </div>
+    
+    <!-- third Row -->  
+    
+    <div class="row">
+        <div class="Projects-col">
+            <h3>Land Use and Area Appraisal </h3> 
+            <img id="toggleImage" src="13.png" onclick="toggleImage()" style="cursor: pointer; border: 1px solid black;">
+            <p> Veer Bhavan Nagar
+                
+                Majestic Blueprints embarks on an eco-friendly housing project that prioritizes sustainability and affordability.</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+        
+        <div class="Projects-col">
+            <h3>App</h3>
+            <img src="Bhagya%20Sri%20Chintakula.pres.png">
+            <p>We have completed an iconic classical farmhouse/villa in Delhi/NCR, blending tradition with modernity.</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+        
+        <div class="Projects-col">
+            <h3>Network Analysis</h3>
+            <img src="eduford_img/cafeteria.png">
+            <p>Unveiling the creative process behind iconic structures, redefining architectural innovation.</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+    </div>
+    
+  <!--fourth Row -->  
+    
+<div class="row">
+        <div class="Projects-col">
+            <h3>3D Urban Data Analysis</h3> 
+            <img src="eduford_img/library.png">
+            <p>We have completed an iconic classical farmhouse/villa in Delhi/NCR, blending tradition with modernity.</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+        
+        <div class="Projects-col">
+            <h3>Multicriteria Analysis - Site selection</h3>
+            <img src="eduford_img/library.png">
+            <p>We have completed an iconic classical farmhouse/villa in Delhi/NCR, blending tradition with modernity.</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+        
+        <div class="Projects-col">
+            <h3>Air Quality Analysis</h3>
+            <img src="eduford_img/cafeteria.png">
+            <p>Unveiling the creative process behind iconic structures, redefining architectural innovation.</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+    </div>    
+ 
+<!--fifth Row -->     
+    
+    <div class="row">
+        <div class="Projects-col">
+            <h3> 20-Minute Neighbourhoods</h3> 
+            <img src="20min_dis.png" style="border: 1px solid black;">
+            <p><strong>Analysisng the spatial distribution of 20-Minute Neighbourhoods</strong></p>
+            <p style="text-align: justify;">
+              The concept of 20-minute neighbourhoods emphasizes the importance of building cities that prioritize walkability, accessibility, and inclusivity. To understand neighbourhoods at granular level in Bradford, an <strong>Accessibility score and Accessibility Index</strong> are 
+                derived for each 20-minute (800m walkable grid) neighbourhood and evaluated access to services (Health, Green Spaces, Local public transport, Grocery stores, restaurants, Banks, Education) and Desired services (recreational spaces, post office).
+                This analysis provides actionable insights for policymakers, urban planners, and developers, enabling them to make data-driven decisions to create equitable and 
+                sustainable neighbourhoods.
+               </p>
+            <div class="column-container">
+                <a href="https://medium.com/@gy97bsc/analysing-spatial-distribution-of-20-minute-neighbourhoods-0cfc931f5efd" class="link-btn">Read Analysis Blog</a>
+            </div>
+        </div>
+        
+        <div class="Projects-col">
+            <h3>Sustainable Mobility Analysis</h3>
+        <img src="thesis%20second%20page.png">
+            <p><strong>Planning for sustainable mobility for Visakhapatnam GVMC area</strong></p>
+            <p style="text-align: justify;">
+           This study aims to assess the urban transport system in Vishakhapatnam city and to evaluate 
+                the mobility of Vishakhapatnam concerning Sustainable transport components and indicators for
+                considering potential changes. This research focuses on sustainable transport improvement of the GVMC area. 
+            In this research I developed <strong>Social, Environmental and Economic profiles</strong> of study area using Landsat 8, 
+                Survey data, open data and street Network data in <strong> ArcGIS and ERDAS IMAGINE. </strong> Visualized LULC, 
+                Transport network, Population density, Pollution, congestion Zones, transport accessibility profiles 
+                and evaluated them with Level of Service benchmarks. Recommended Street network improvements, 
+                Vehicular control zones, Bus stop locations, Pedestrian and cycling lane routes in the city.</p>
+            
+        </div>
+        
+        <div class="Projects-col">
+            <h3>Residential Neighborhood Township.</h3>
+            <img src="Neighbourood.png" style="border: 1px solid black;">
+            <p>Unveiling the creative process behind iconic structures, redefining architectural innovation.</p>
+            <div class="column-container">
+                <a href="#" class="link-btn">Read More</a>
+            </div>
+        </div>
+    </div>   
+    
+</section>
+    
+    
+    
+<section class="contact">
+    <h1>CONTACT</h1>
+    <form action="">
+    <input type="text" placeholder="Enter your name" required >
+    <input type="email" placeholder="Enter your email address" required >
+    <input type="text" placeholder="Enter your subject" required >
+    <textarea rows="8" placeholder="Message" required ></textarea>
+     <div class="form-footer">
+            <button type="submit" class="link-btn">Send Message</button>
+
+            <div class="icons">
+                <a href="https://github.com/BHagya0402" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/bhagya-sri-chintakula" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:gy97bsc@gmail.com" aria-label="Email Contact">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </form>
+</section>
+	
+
+    
+    
+    
+	
+
+<!--------JavaScript for toggle menu---------->
+
+<script>
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+	</script>
+
+    
+    
+<!--------JavaScript for animation--------->    
+    
+    
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.querySelectorAll(".slide");
+    let dots = document.querySelectorAll(".dot");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+
+    dots[slideIndex - 1].classList.add("active");
+
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+// Manual dot navigation
+function currentSlide(n) {
+    slideIndex = n - 1;
+    showSlides();
+}
+</script>
+
+<script>
+let imageIndex = 0;
+const images = ["13.png", "12.png"];
+
+function toggleImage() {
+    imageIndex = (imageIndex + 1) % images.length;
+    document.getElementById("toggleImage").src = images[imageIndex];
+}
+</script>   
+    
+    
+    
+
+</body>
+</html>
