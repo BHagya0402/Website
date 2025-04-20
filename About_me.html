@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me Timeline</title>
+  <style>
+    body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('Screenshot%20(14).png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.94); /* fallback white overlay */
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent white layer */
+  z-index: -1;
+}
+
+    .timeline-container {
+      max-width: 1000px;
+      margin: 51px auto;
+      position: relative;
+      padding: 40px 20px;
+    }
+
+    .timeline-container h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+      color: #333;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+
+    /* Vertical line (the "road") */
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #00509e;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 40px 0;
+      width: 44.5%;
+      padding: 20px 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .timeline-item.left {
+      left: 0;
+      transform: translateX(-30px);
+      text-align: right;
+    }
+
+    .timeline-item.right {
+      left: 50%;
+      transform: translateX(30px);
+      text-align: left;
+    }
+
+    .timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: #00509e;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  z-index: 1;
+}
+
+.timeline-item.left::before {
+  right: -40px;
+}
+
+.timeline-item.right::before {
+  left: -43px;
+}
+
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #00509e;
+      text-align-last: center;
+    }
+
+   .timeline-item span {
+      font-size: 0.9rem;
+      color: #777;
+     display: block;
+     text-align: center;
+     font-weight: bold;
+}
+
+    .timeline-item p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #444;
+      text-align: left;
+    }
+    
+  .strong {
+  font-weight: bold;
+  font-size: 16px;  
+}
+
+    .My_expertise{
+      width: 95%
+    } 
+    
+    .My_expertise h1{
+      font-size: 2.0rem;
+      padding-left: 40px;
+      
+      
+      
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 8px;
+      }
+
+      .timeline-item {
+        width: 100%;
+        padding-left: 60px;
+        text-align: left;
+        transform: none !important;
+      }
+
+      .timeline-item.left,
+      .timeline-item.right {
+        left: 0;
+      }
+
+      .timeline-item::before {
+        left: 20px;
+        right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline-container">
+    <h2>My Journey</h2>
+    <ul class="timeline">
+
+      <!-- Education -->
+      
+        <li class="timeline-item left">
+        <h3>Urban/Geospatial Analyst</h3>
+        <span>2025 – Present | Urban Analytics & GeoAI, Remote</span>
+        <p style="text-align: justify;">Collaborating with researchers to build a web platform featuring 70+ geospatial packages for
+ urban analysis that supports sustainable planning using open-source data. Researching on geospatial tools, Python, JAVA and R packages to leverage creative coding techniques for analyzing
+ complex urban data. </p>
+        </li>
+
+      <li class="timeline-item right">
+        <h3>MSc Urban Data Science and Analytics</h3>
+        <span>2023 – 2024 | University of Leeds</span>
+        <p style="text-align: justify;"> <strong>Coursework: </strong>Creative coding for Urban Problems, Data Collection and Analysis, Analyzing Cities, Analytics for Urban
+           Policy, Data Science for Urban Systems and Programming for Data Science.
+        
+         <strong>Project: Spatial analysis of Historical Land Use change to identify and Estimate Urban Sprawl </strong>
+        
+        
+        
+        </p>
+      </li>
+
+       <li class="timeline-item left">
+        <h3>Urban Planner & GIS Analyst </h3>
+        <span>2021 – 2023 | Ananad Associates- Kakinada, India </span>
+        <p style="text-align: justify;"> 
+        • Designed, analyzed, and maintained social, economic and environmental data using ArcGIS, QGIS, and AutoCAD to
+        guide strategic planning, land readjustment, environmental conservation, and infrastructure projects.
+        <br>• Conducted Environmental Impact Assessments to analyze land use land cover change (95% precision), NDVI Analysis, pollution risks,
+ land surface temperature, and proximity of green spaces, and developed vulnerability indices at ward level.
+ <br> • Collaborated with government agencies, NGOs, and local communities to support sustainable strategies that resulted in
+ 30% reduction in the risk of urban floods, improvement of urban greenery, and access to green spaces.
+ <br> • Created interactive dashboards for client, public and stakeholder engagement, by collaborating with 3+
+ cross-functional teams, including architects, and engineers, in designing and managing development projects.</p>
+      </li>
+     
+      
+      <li class="timeline-item right">
+        
+        <h3>Associate Member - Institute of Town Planners, India</h3>
+        
+      </li>
+
+       <li class="timeline-item left">
+        <h3>Research Scholar</h3>
+        <span>2019 – 2021 | Indian Institute of Technology Roorkee </span>
+        <p style="text-align: justify;"> <strong>Geospatial data analyst:</strong> Analyzed social, economic, and environmental data of Visakhapatnam using 30 sustainable mobility indicators to
+ evaluate the Bus Rapid Transit System (BRTS) impact and designed strategies to enhance green transport.
+         <br>• Conducted Environmental Impact Assessments to analyze land use land cover change (95% precision), pollution risks,
+ land surface temperature, and proximity of green spaces, and developed vulnerability indices at ward level.
+         
+         
+         </p>
+      </li>
+      
+      <li class="timeline-item right">
+        
+        <h3>Awarded an Institute Assistantship by Ministry of Human Resource Development (MHRD), India.</h3>
+        
+      </li>
+      
+      
+      
+      <li class="timeline-item right">
+        <h3>Master of Urban and Rural Planning</h3>
+        <span>2019 – 2021 | Indian Institute of Technology Roorkee </span>
+        <p style="text-align: justify;"> <strong>Coursework</strong>: Socio-Economics, Demography and Quantitative Techniques, Environment Impact Assessment, Planning
+           Studio, Sustainable Infrastructure Planning, Ecology and Sustainable Development. <br>
+        <strong>Dissertation: </strong>
+          
+        </p>
+      </li>
+ 
+      
+     
+      <li class="timeline-item left">
+        <h3>Assistant Environmental Engineer</h3>
+        <span>2018 – 2019 | SR Constructions & Solutions </span>
+        <p style="text-align: justify;">Prepared precise scale drawings using AutoCAD, SketchUp, and Revit for housing projects and produced accurate
+ land-use mapping and assessments using Landsat8 and Sentinel2 data for land management projects.
+        <br>• Identified 15 pollution hotspots and vulnerable areas in Kakinada Smart City, and improved wastewater management,
+tree planting, green infrastructure and sustainable agriculture strategies to promote eco-friendly tourism.
+ <br> • Integrated advanced GIS and machine learning techniques to estimate the impact of local policies, infrastructure
+ projects by scenario analysis and multi criteria analysis that enhanced project efficiency by 20%. </p>
+      </li>
+      
+      
+      
+      <li class="timeline-item right">
+        
+        <h3>Awarded Merit Scholarship by Gov of Andhra Pradesh, India</h3>
+        
+      </li>
+      
+      
+      <li class="timeline-item right">
+        <h3>Bachelor of Technology Civil Engineering</h3>
+        <span>2014 – 2018 | Jawaharlal Nehru Technological University Kakinada</span>
+        <p style="text-align: justify;"><strong>Coursework: </strong> Surveying Field work, Building Planning & Drawing, Water Resources Engineering, Environmental
+ Engineering, GIS Tools and Techniques, Remote Sensing and GIS Applications, and GIS and CAD Lab. <br>
+        <strong>Project: </strong>
+        
+        
+        </p>
+      </li>
+
+    </ul>
+  </div>
+  
+  
+  <section class = "My_expertise">
+  <h1>My Expertise </h1>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </section>
+  
+  
+  <section class = "My_interests">
+  <h2>My Interests </h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+</body>
+</html>
