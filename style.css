@@ -4,14 +4,32 @@
 	font-family: 'Poppins', sans-serif;
 	background: white;
 }
-.header{
+.header {
 	min-height: 95vh;
 	width: 100%;
-	background: white;
-    background-position: center;
-	background-size: cover;
 	position: relative;
+	color: #fff;
+	overflow: hidden;
 }
+
+.header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('website_img/background.png') no-repeat center center;
+	background-size: cover;
+	opacity: 0.3; /* Adjust this value for more/less transparency */
+	z-index: 0;
+}
+
+.header > * {
+	position: relative;
+	z-index: 1;
+}
+
 
 /*----------Globe logo-----------*/
 
