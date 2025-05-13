@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta name = "viewport" content = "width = device-width, initial-scale=1.0">
+	<title> Website</title>
+	<link rel= "stylesheet" href = "style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+ <body>
+    
+<section class="Spatiotemporal">
+    <h1>“Spatiotemporal Analysis of Historical Land Use to Estimate the Urban Growth of Evolving Cities”</h1>
+    <p style="text-align: justify;">
+        Urbanization is a global phenomenon which has a significant role in the development and modernization 
+        of cities (Cui and Shi, 2012). The rapid growth of urban areas has resulted in the land use change from 
+        agricultural and forest to built-up (Sinha, 2018). In the early 20th century urban areas grew vertically 
+        (Glaeser and Kahn, 2003) leading to compact cities, which escalated urban challenges like unaffordable housing, 
+        insufficient infrastructure, economic challenges, and environmental degradation. 
+        These urban challenges forced growth outward, promoting horizontal expansion, 
+        resulting in high-density infill and urban sprawl. 
+    </p>
+    
+    <p style="text-align: justify;"> Urban growth has a significant impact on the environmental,
+        social, and economic factors within and surrounding Urban areas. 
+        Environmental degradation (Grimmond, 2007), loss of farmland (Habibi and Asadi, 2011), global warming (Van Der Waals, 2000), 
+        deforestation, desertification (Grimmond, 2007),  biodiversity loss (McDonald et al., 2015) (McKinney, 2008), 
+        land and water pollution (Johnson, 2001) are the global challenges threatening urban areas due to rapid changes 
+        in their growth patterns. Studying urban growth helps to understand development patterns (Rosni and Noor, 2016) 
+        and guides to formulate urban planning strategies to address urban challenges (Martine et al., 2012) 
+        and ensure effective natural resource utilization and provision of amenities and services (Sudhira et al., 2004). </p>
+    <p style="text-align: justify;">
+    The satellite images below illustrate the progressive land use transformation over an 18-year period. 
+        In 2006, the area predominantly consists of agricultural fields and forested land, 
+        with limited built-up development concentrated in isolated clusters. By 2015, we observe substantial urban expansion, 
+        with new residential developments replacing sections of farmland and green spaces. Road infrastructure has also been 
+        extended to support the growing settlements. In the 2024 image, the landscape shows further densification with 
+        increased housing density and reduced agricultural land. Green patches have been fragmented or replaced entirely 
+        by built-up zones, reflecting the classic pattern of urban sprawl.     
+    </p>
+</section>
+    <section class="timeline-images">
+    <div class="spatio_image">
+        <img src="website_img/ST_2006.png" alt="2006">
+        <p>2006</p>
+    </div>
+    <div class="spatio_image">
+        <img src="website_img/ST_2015.png" alt="2015">
+        <p>2015</p>
+    </div>
+    <div class="spatio_image">
+        <img src="website_img/ST_2024.png" alt="2024">
+        <p>2024</p>
+    </div>
+        
+</section>
+
+    <section class="text">
+     
+    <p style="text-align: justify;, padding-top: 0;">
+    Patterns of land use land cover reflect the distribution of
+    the built environment (Viana et al., 2019) and the direction of urban growth. 
+    The urban growth patterns can be identified using remote sensing data (Sudhira et al., 2003), 
+    which is an efficient method for identifying the growth direction and rate of urban sprawl. Analysing the 
+    historical land use by applying data analysis techniques helps in understanding growth patterns, 
+    and predicting future land use. The results obtained provide crucial information about 
+    the spatial distribution of green spaces, built form, and their historical changes, highlighting the need for 
+    sustainable policies to mitigate urban sprawl. 
+    </p> 
+     
+    <p style="text-align: justify;, padding-top: 0;">
+        
+    In this study,
+    to understand how Staten Island evolved a buffer area of 956.71 sq. Km is considered and the percentage of increase 
+    in a built-up area and decrease in green space is evaluated. “This project aims to study temporal land use changes using 
+    spatial analysis techniques to evaluate urban growth from 1984 to 2024 and estimate future land use of the Staten 
+    Island borough buffer”. Land use pattern in the study area has significantly changed from 1984 to 2024 with a 22.91% 
+    built-up area increase and a 24% decrease in greenspaces. Further, if this growth pattern continues by 2050 the study area 
+    will have only 3% greenspaces. The research covers Land use Land cover analysis from 1984 to 2024 with a brief discussion of the 
+    results to understand how the study area evolved chronologically.     
+        
+    </p>   
+        
+    <div class="project-section">
+  <div class="column objectives">
+    <p><strong>Objectives:</strong></p>
+    <p>
+      The project aim is achieved by answering the research questions with four main objectives:<br><br>
+      1. To acquire data and create a structured Python code for data wrangling and visualization.<br>
+      2. To classify LULC and analyze historical land use changes from 1984 to 2024.<br>
+      3. To evaluate urban growth patterns and identify urban growth direction.<br>
+      4. To predict future land use based on historical patterns.
+    </p>
+  </div>
+
+  <div class="column image-column">
+    <img src="website_img/LULC_study_area.png" alt="Study Area 1">
+  </div>
+
+  <div class="column image-column">
+    <img src="website_img/LULC_Sample_points.png" alt="Study Area 2">
+  </div>
+</div>   
+
+        
+<section class="AnalysisResults">
+    <h2>Analysis and Results </h2>    
+    <p><strong>Temporal Land Use Land Cover (LULC) Classification (1984 -2024)  </strong></p>
+    <p style="text-align: justify;, padding-top: 0;">
+        
+    Temporal LULC is classified for nine years from 1984 to 2024 with a five-year interval. 
+    The cropped multi-spectral band raster data and sample points are used to extract the pixel information of each sample point.
+    To retrieve pixel values from satellite images a function is defined to read the pixel values, and an array of sample points 
+    with band values are obtained. Table 2 shows the extracted pixel values for 2024, each image pixel has a unique band value 
+    based on which the machine-learning model identifies the nearest values and classifies the LULC.     
+        
+    </p>      
+        
+    
+<div class="image-grid">
+  <div class="grid-item"><img src="website_img/sample_pixel_LULC.png" alt="Image 1"></div>
+  <div class="grid-item"><img src="website_img/Random_forest_LULC.png" alt="Image 2"></div>
+  <div class="grid-item"><img src="website_img/Lancover_2024.png" alt="Image 3"></div>
+  <div class="grid-item"><img src="website_img/LULC_percentage.png" alt="Image 4"></div>
+</div>
+    
+    <p style="text-align: justify;, padding-top: 0;">
+    The Land Use Land Cover (LULC) image is used to calculate the percentage of LULC for each class and visually represent land use changes over 40 years. The results demonstrate that built-up areas in the study area escalated by 22.91%. The percentage of built-up areas and roads in 1984 was 27.39%, which increased to 50.3% in 2024. However, land cover corresponding to water bodies fluctuated only slightly (less than 0.5%), likely due to seasonal variations or water level differences on the dates the data were collected. 
+
+    On the other hand, green spaces have drastically decreased from 37.63% to 13.58%, resulting in a loss of approximately 24% of green cover over 40 years. These results indicate the intensity of urban growth and its impact on LULC. Figures 6 and 8 show the interactive land use/land cover plots from 1984 to 2024. These plots visually highlight how green spaces were gradually occupied by built-up areas.
+</p>
+
+   <div class="full-width-image">
+  <img src="website_img/2.png" alt="Final LULC Results">
+</div> 
+    
+    <p style="text-align: justify;, padding-top: 0;">
+    The landuse change in this study is determined by using image processing techniques, the LULC maps are compared in five years for short-term and ten-year intervals for long-term change. Assuming green spaces are occupied by built form, two LULC images were compared and the change is distinguished. In Figure 10, minute changes in urban form are identified and for better representation, high-growth areas were extracted using morphological operations with minimum area (pixel count for a significant change).
+    </p>
+    
+    <div class="full-width-image">
+  <img src="website_img/1.png" alt="Final LULC Results">
+</div>
+    
+        </section>      
+ 
+    
+        
+          
+    </section> 
+    
+     
+     
+     
+     
+     
+     
+</body>    
+</html>
