@@ -231,6 +231,8 @@ nav .fa{
     color: white;
 }
 
+
+
 /*---------- Right side animation  -----------*/
 
 /* Position the slider to the right */
@@ -239,7 +241,7 @@ nav .fa{
     top: 60%;
     right: 5%;
     transform: translateY(-50%);
-    width: 550px;
+    width: 500px;
     height: 550px;
     overflow: hidden;
     border-radius: 10px;
@@ -306,7 +308,7 @@ nav .fa{
     display: flex;
     justify-content: center;
     align-items: left;
-    padding: 60px 60px 20px 60px;
+    padding: 2px 50px 20px 60px;
     background: white;
 }
 
@@ -325,7 +327,7 @@ nav .fa{
 
 .about-text h1 {
     font-size: 36px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-left: 12px;
     color: #333;
     margin-bottom: 15px;
@@ -366,7 +368,6 @@ nav .fa{
 .about-link:hover {
     background: #7990ad;
 }                  
-
 
 /*---------Skills-----------*/
 .Skills{
@@ -522,6 +523,44 @@ strong {
 
 
 
+
+/*----------Media-Small-----------*/
+
+@media(max-width: 700px){
+	.text-box h1{
+	font-size: 24px;
+	}
+	.text-box h2{
+	font-size: 20px;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+	
+	.nav-links{
+		position: absolute;
+		background:white;
+		height: 100vh;
+		width: 200px;
+		top:0;
+		right:-200px;
+		text-align: left;
+		z-index: 2;
+		transition:1s;
+	}
+	nav .fa{
+		display: block;
+		color:#7990ad;
+		margin: 10px;
+		font-size: 24px;
+		cursor:pointer;
+	}
+	.nav-links ul{
+		padding: 30px;
+	}
+     
+}
+
 @media(max-width: 700px){
 	.row{
 		flex-direction:column;
@@ -620,3 +659,116 @@ strong {
 	}
 }
 
+/*----------Spatial Analysis----------*/
+.Spatiotemporal {
+    width:99%;
+    padding-top: 45px;
+
+}
+.Spatiotemporal h1{
+    font-size: 29.5px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.Spatiotemporal p {
+    font-size: 18px;
+    padding-left: 54px;
+    line-height: 1.5;
+    padding-right: 50px;
+    text-align: center;
+
+}
+.timeline-images {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.spatio_image {
+    text-align: center;
+}
+
+.text p{
+    font-size: 17px;
+    padding-left: 54px;
+    padding-right: 50px;
+    line-height: 1.6;
+    padding-top: 0;
+    text-align: center;
+
+}
+
+.spatio_image img {
+    width: 400px; /* or any size you prefer */
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+.project-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 40px 50px;
+}
+
+.column {
+  flex: 1;
+}
+
+.objectives p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.image-column img {
+  width: 100%;
+  padding-top: 20px;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.AnalysisResults{
+    width: 95%;
+    padding-left: 20px;
+}
+.AnalysisResults h2{
+    padding-left: 40px;
+}
+.AnalysisResults p{
+  padding-left: 40px; 
+  font-size: 18px;
+  line-height: 1.6;
+    
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* space between images */
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.full-width-image {
+  width: 100%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.full-width-image img {
+  max-width: 90%;
+  height: auto;
+}
