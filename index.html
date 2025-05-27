@@ -410,14 +410,21 @@
     
 <section class="contact">
     <h1>CONTACT</h1>
-    <form action="">
-    <input type="text" placeholder="Enter your name" required >
-    <input type="email" placeholder="Enter your email address" required >
-    <input type="text" placeholder="Enter your subject" required >
-    <textarea rows="8" placeholder="Message" required ></textarea>
-     <div class="form-footer">
-            <button type="submit" class="link-btn">Send Message</button>
+    <form target="_blank" action="https://formsubmit.co/gy97bsc@gmail.com" method="POST">
+        
+        <!-- Hidden fields -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
 
+        <!-- Visible inputs -->
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <input type="text" name="subject" placeholder="Enter your subject" required>
+        <textarea name="message" rows="8" placeholder="Message" required></textarea>
+
+        <div class="form-footer">
+            <button type="submit" class="link-btn">Send Message</button>
+            
             <div class="icons">
                 <a href="https://github.com/BHagya0402" aria-label="GitHub Profile">
                     <i class="fab fa-github"></i>
@@ -432,6 +439,7 @@
         </div>
     </form>
 </section>
+
 	
 
     
