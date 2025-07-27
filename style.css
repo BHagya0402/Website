@@ -89,12 +89,6 @@ nav{
 }
 
 @media(max-width: 700px){
-	.text-box h1{
-	font-size: 24px;
-	}
-	.text-box h2{
-	font-size: 20px;
-	}
 	.nav-links ul li{
 		display: block;
 	}
@@ -155,7 +149,8 @@ nav{
 /*---------- NAME FOR DIFFERENT MEDIA-----------*/
 @media(max-width: 700px){
 .text-box{
-		position: center;
+	width:100%;
+	position: center;
 	}	
 .text-box h1{
 	font-size: 30px;
